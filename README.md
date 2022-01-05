@@ -28,7 +28,7 @@
   
 ### 依赖
 
-### goimports
+### goimports2
 安装：
 ```
 go install golang.org/x/tools/cmd/goimports@latest
