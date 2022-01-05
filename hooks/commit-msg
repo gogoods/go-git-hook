@@ -1,0 +1,14 @@
+#!/bin/sh
+
+COMMIT_MSG=`cat $1 | egrep "^(feat|fix|docs|chore):\s(\S|\w)+"`
+
+
+if [ "$COMMIT_MSG" = "" ]; then
+	echo "commit message is invalid!"
+	exit 1
+fi
+
+if [ ${#COMMIT_MSG} -lt 10 ]; then
+	echo "commit message is too short!"
+	exit 1
+fi
