@@ -46,8 +46,8 @@ main() {
     rm .git/hooks/commit-msg;
   fi
 
-#  curl https://git.woa.com/willlv/go-git-hook/raw/master/commit-msg.sh -o .git/hooks/commit-msg
-   curl https://git.woa.com/willlv/go-git-hook/raw/master/pre-commit.sh -o .git/hooks/pre-commit
+#  curl https://raw.githubusercontent.com/gogoods/go-git-hook/main/hooks/commit-msg -o .git/hooks/commit-msg
+   curl https://raw.githubusercontent.com/gogoods/go-git-hook/main/hooks/pre-commit -o .git/hooks/pre-commit
 
 #  chmod +x .git/hooks/commit-msg
   chmod +x .git/hooks/pre-commit
